@@ -46,7 +46,7 @@ RSpec.describe VendingMachine do
         vm.select(product.name)
         vm.insert(200)
 
-        expect(vm.vend).to eq([[coin, coin], product])
+        expect(vm.vend).to eq([['25 * 2'], product])
       end
 
       it 'raises error if change could not be issued' do

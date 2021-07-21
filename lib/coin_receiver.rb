@@ -44,6 +44,6 @@ class CoinReceiver
 
     raise OutOfCoinError, 'No suitable coin to issue' if amount != 0
 
-    change
+    change.group_by { |c| c.value }.map { |k, v| "#{k} * #{v.count}" }
   end
 end
