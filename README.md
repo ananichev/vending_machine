@@ -28,3 +28,15 @@ Available coins: `0.25, 0.5, 1, 2, 3, 5`
    vm.insert(50)
    vm.vend
    ```
+
+## Get Started - Alternative
+
+1. Run bundle install
+    ```bash
+    bundle install
+    ```
+
+2. Execute the `vending_machine.rb` file and follow the instructions
+   ```bash
+   bundle exec ruby vending_machine.rb
+   ```
